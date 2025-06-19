@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>View app.js</title>
+</head>
+<body>
+  <h1>Contents of app.js</h1>
+  <pre id="code">Loading...</pre>
+
+  <script>
+  fetch('app.js')
+    .then(response => response.text())
+    .then(text => {
+      document.getElementById('code').textContent = text;
+    })
+    .catch(error => {
+      document.getElementById('code').textContent = 'Failed to load app.js: ' + error;
+    });
+  </script>
+</body>
+</html>
