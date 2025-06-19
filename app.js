@@ -1,1 +1,1 @@
-alert("Hello! This is your app.js running.");
+alert("app.js is running!");
